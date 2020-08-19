@@ -10,10 +10,12 @@ import SwiftUI
 
 struct PlayerCardView: View {
     var player: PlayerData
-    @State private var show_modal: Bool = false
+    @State var show_modal: Bool = false
     
     init(player:PlayerData ) {
+        
         self.player = player
+        
         print("init")
         print(player.name)
 
@@ -24,15 +26,15 @@ struct PlayerCardView: View {
             .background(player.iconimage?.resizable()
             .scaledToFill()).cornerRadius(15).padding(8).onTapGesture(){
                 print("tapped")
-                self.show_modal = true
-        }.sheet(isPresented: self.$show_modal){
-            ModalView(player:self.player)
+                self.show_modal.toggle()
+        }.sheet(isPresented: $show_modal){
+            PlayerModalView(player:self.player, showSheetView: self.$show_modal )
         }
     }
 }
 
 struct PlayerCardView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerCardView(player:PlayerData(name: "Sonny", bio: "Developer", isOnline: false, iconimage: Image("playerimage")))
+        PlayerCardView(player:PlayerData(name: "Sonny", bio: "Developer", email: "shengh@princeton.edu", phoneNumber: "231231231231", iconimage: Image("playerimage")))
     }
 }

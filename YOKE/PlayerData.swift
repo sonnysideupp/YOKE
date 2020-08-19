@@ -13,31 +13,36 @@ public class PlayerData: Identifiable{
     
     public var name : String?
     public var bio : String?
-    public var isOnline : Bool?
+    public var email : String?
+    public var phoneNumber : String?
+    //public var isOnline : Bool?
     public var iconimage: Image?
     
 
     
-    required public init (dictionary: Dictionary<String, AnyObject?>){
+    required public init (dictionary: [String: Any]){
         
        
-        name = dictionary["name"] as? String
+        name = dictionary["Name"] as? String
         print("name")
         print(name)
-        bio = dictionary["bio"] as? String
+        bio = dictionary["Bio"] as? String
         print("bio")
         print(bio)
-        isOnline = dictionary["isOnline"] as? Bool
+        //isOnline = dictionary["isOnline"] as? Bool
 //        print("isOnline")
 //        print(isOnline)
+        email = dictionary["Email"] as? String
+        phoneNumber = dictionary["PhoneNumber"] as? String
         iconimage = Image("playerimage")
     
     }
     
-    required public init(name : String, bio: String, isOnline: Bool, iconimage: Image){
+    required public init(name : String, bio: String, email:String, phoneNumber: String, iconimage: Image){
         self.name = name
         self.bio = bio
-        self.isOnline = isOnline
+        self.email = email
+        self.phoneNumber = phoneNumber
         self.iconimage = iconimage
         
     }

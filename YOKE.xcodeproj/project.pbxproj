@@ -24,6 +24,9 @@
 		260F922524E54B1500A9F6BC /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F922424E54B1500A9F6BC /* PlayerCardView.swift */; };
 		260F922724E5573300A9F6BC /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F922624E5573300A9F6BC /* ModalView.swift */; };
 		260F922924E604EC00A9F6BC /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F922824E604EC00A9F6BC /* ActivityIndicator.swift */; };
+		26828F1924EBB58900D0B881 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26828F1824EBB58900D0B881 /* GoogleService-Info.plist */; };
+		26828F1B24EBCCF800D0B881 /* AddPlayerModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26828F1A24EBCCF800D0B881 /* AddPlayerModalView.swift */; };
+		DFC452DA6C9F54324BAED659 /* Pods_YOKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37D1B48E64F3C83FC15A7A9 /* Pods_YOKE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23EA3C16D0D00800EBF177CD /* Pods-YOKE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOKE.debug.xcconfig"; path = "Target Support Files/Pods-YOKE/Pods-YOKE.debug.xcconfig"; sourceTree = "<group>"; };
 		260F91E424E5120100A9F6BC /* YOKE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOKE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		260F91E724E5120100A9F6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		260F91E924E5120100A9F6BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,10 @@
 		260F922424E54B1500A9F6BC /* PlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
 		260F922624E5573300A9F6BC /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		260F922824E604EC00A9F6BC /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		26828F1824EBB58900D0B881 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26828F1A24EBCCF800D0B881 /* AddPlayerModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerModalView.swift; sourceTree = "<group>"; };
+		424C6A9993F95559CB9852B4 /* Pods-YOKE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOKE.release.xcconfig"; path = "Target Support Files/Pods-YOKE/Pods-YOKE.release.xcconfig"; sourceTree = "<group>"; };
+		D37D1B48E64F3C83FC15A7A9 /* Pods_YOKE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOKE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				260F921D24E526C300A9F6BC /* Alamofire in Frameworks */,
+				DFC452DA6C9F54324BAED659 /* Pods_YOKE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04CB8677463087C490002A94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D37D1B48E64F3C83FC15A7A9 /* Pods_YOKE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		260F91DB24E5120100A9F6BC = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +118,8 @@
 				260F91FD24E5120600A9F6BC /* YOKETests */,
 				260F920824E5120600A9F6BC /* YOKEUITests */,
 				260F91E524E5120100A9F6BC /* Products */,
+				26ECCE318C1225538546FF1C /* Pods */,
+				04CB8677463087C490002A94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +136,7 @@
 		260F91E624E5120100A9F6BC /* YOKE */ = {
 			isa = PBXGroup;
 			children = (
+				26828F1824EBB58900D0B881 /* GoogleService-Info.plist */,
 				260F91E724E5120100A9F6BC /* AppDelegate.swift */,
 				260F91E924E5120100A9F6BC /* SceneDelegate.swift */,
 				260F91EB24E5120100A9F6BC /* ContentView.swift */,
@@ -125,6 +145,7 @@
 				260F922224E5454200A9F6BC /* AppConstants.swift */,
 				260F922424E54B1500A9F6BC /* PlayerCardView.swift */,
 				260F922624E5573300A9F6BC /* ModalView.swift */,
+				26828F1A24EBCCF800D0B881 /* AddPlayerModalView.swift */,
 				260F922024E527F900A9F6BC /* Observer.swift */,
 				260F921924E5251600A9F6BC /* APIManager.swift */,
 				260F921E24E526D300A9F6BC /* PlayerData.swift */,
@@ -162,6 +183,15 @@
 			path = YOKEUITests;
 			sourceTree = "<group>";
 		};
+		26ECCE318C1225538546FF1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23EA3C16D0D00800EBF177CD /* Pods-YOKE.debug.xcconfig */,
+				424C6A9993F95559CB9852B4 /* Pods-YOKE.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 260F920E24E5120600A9F6BC /* Build configuration list for PBXNativeTarget "YOKE" */;
 			buildPhases = (
+				65FBACA3D33A01F8F9817A33 /* [CP] Check Pods Manifest.lock */,
 				260F91E024E5120100A9F6BC /* Sources */,
 				260F91E124E5120100A9F6BC /* Frameworks */,
 				260F91E224E5120100A9F6BC /* Resources */,
+				BD9EAD9429F51A3B9273AA0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				260F91F424E5120500A9F6BC /* LaunchScreen.storyboard in Resources */,
+				26828F1924EBB58900D0B881 /* GoogleService-Info.plist in Resources */,
 				260F91F124E5120500A9F6BC /* Preview Assets.xcassets in Resources */,
 				260F91EE24E5120500A9F6BC /* Assets.xcassets in Resources */,
 			);
@@ -294,6 +327,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65FBACA3D33A01F8F9817A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YOKE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9EAD9429F51A3B9273AA0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YOKE/Pods-YOKE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YOKE/Pods-YOKE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YOKE/Pods-YOKE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		260F91E024E5120100A9F6BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -304,6 +379,7 @@
 				260F91E824E5120100A9F6BC /* AppDelegate.swift in Sources */,
 				260F921824E51D9700A9F6BC /* HomeView.swift in Sources */,
 				260F922724E5573300A9F6BC /* ModalView.swift in Sources */,
+				26828F1B24EBCCF800D0B881 /* AddPlayerModalView.swift in Sources */,
 				260F922924E604EC00A9F6BC /* ActivityIndicator.swift in Sources */,
 				260F922324E5454200A9F6BC /* AppConstants.swift in Sources */,
 				260F921A24E5251600A9F6BC /* APIManager.swift in Sources */,
@@ -472,6 +548,7 @@
 		};
 		260F920F24E5120600A9F6BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23EA3C16D0D00800EBF177CD /* Pods-YOKE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +569,7 @@
 		};
 		260F921024E5120600A9F6BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424C6A9993F95559CB9852B4 /* Pods-YOKE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
